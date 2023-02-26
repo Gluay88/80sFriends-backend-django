@@ -4,4 +4,4 @@ from friends.models import Friend
 class FriendSerializer(serializers.ModelSerializer):
     class Meta:
         model = Friend
-        field = '__all__'
+        fields = '__all__'
