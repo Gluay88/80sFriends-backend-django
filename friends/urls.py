@@ -19,5 +19,6 @@ from friends import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/friends/', views.friends, name='friends')
+    path('api/friends/', views.friends, name='friends'),
+    path('api/friends/<int:id>', views.friend, name='friend')
 ]
